@@ -1,0 +1,14 @@
+.img1{
+	width: 100%;
+}
+.img2{
+	width: 100%;
+}
+.parallax {
+	background-image: url("https://imgs.search.brave.com/Zzbb3Yy1uBsGLBLE7TF-9JL8xuC5E9FWFp3-VnTTSHQ/rs:fit:1200:1200:1/g:ce/aHR0cDovL3N0YXRp/YzQuYnVzaW5lc3Np/bnNpZGVyLmNvbS9p/bWFnZS81NDg1NjMx/ZTY5YmVkZGE2MzMw/M2VkNTEvZ3J1bXB5/LWNhdC1oYXMtZWFy/bmVkLWhlci1vd25l/ci1uZWFybHktMTAw/LW1pbGxpb24taW4t/anVzdC0yLXllYXJz/LmpwZw");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }

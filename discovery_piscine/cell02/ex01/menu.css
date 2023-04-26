@@ -1,0 +1,56 @@
+* {
+	margin: 20;
+	padding: 0;
+	list-style-type: none;
+	box-sizing: border-box;
+  }
+
+  body {
+	background: url("https://imgs.search.brave.com/ElLl9_q-sS0WzscuYXqwgsVr_UHBNa-4MbMGJXQH8yw/rs:fit:1200:1188:1/g:ce/aHR0cDovL2dyb3Vw/ZS1jdGEuY29tL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE0LzAx/L1RHVi1TTkNGLmpw/Zw") center;
+	background-size: cover;
+	min-height: 700px;
+	font-family: "Helvetica Neue", sans-serif;
+  }
+
+  nav {
+	text-align: center;
+  }
+
+  .menu {
+	display: inline-block;
+  }
+  
+  .menu > li {
+	color: blue;
+	width: 150px;
+	height: 100px;
+	line-height: 40px;
+	background:rgb(232, 232, 28);
+	cursor: pointer;
+	font-size: 20px;
+  }
+
+  .sub-menu {
+	transform: scale(0);
+	transform-origin: top center;
+	transition: all 300ms ease-in-out;
+  }
+  .sub-menu li {
+	font-size: 15px;
+	background:blue;
+	padding: 8px 0;
+	color: white;
+	transition: all 300ms ease-in-out;
+  }
+  .sub-menu li:last-child {
+	border-bottom: 0;
+  }
+  .sub-menu li:hover {
+	background: black;
+  }
+  .menu > li:hover .sub-menu li {
+	transform: scale(1);
+  }
+  .menu > li:hover .sub-menu {
+	transform: scale(1);
+  }
