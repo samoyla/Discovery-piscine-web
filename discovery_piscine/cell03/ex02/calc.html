@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			max-width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: sans-serif;
+			background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+		}
+		.i1 {
+			height: 50px;
+			width: 150px;
+			text-align: center;
+			background-color: aliceblue;
+			font-weight: bolder;
+			color: black;
+		}
+		.i2{
+			height: 50px;
+			width: 150px;
+			text-align: center;
+			background-color: aliceblue;
+			font-weight: bolder;
+			color: black;
+		}
+		.button{
+			height: 50px;
+			width: 70px;
+			background-color: rgb(88, 42, 109);
+			font-weight: bolder;
+			color:#fbc2eb
+		}
+		.select{
+			height: 50px;
+			width: 70px;
+			background-color: rgb(88, 42, 109);
+			font-weight: bolder;
+			color:#fbc2eb
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<input id="input1" class="i1" type="text">
+			<select id="oper" class="select">
+				<option value="/">/</option>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="%">%</option>
+			</select>
+		<input id="input2" class="i2" type="text">
+		<input id="click" class="button" type="submit" value="Try me!" onclick="calculate()">
+	</div>
+<script>
+setInterval(function() {
+		 alert("Please, use me..."); }, 30000);		
+function calculate() {
+	let input1 = parseInt(document.getElementById("input1").value);
+	let input2 = parseInt(document.getElementById("input2").value);
+	let value = document.getElementById("oper").value;
+	let result = 0;
+	if (input1 >= 0 && input2 >= 0)
+	{
+		if (value == '/')
+		{
+			if(input2 == 0){
+				alert("It's over 9000!");
+				return
+			}
+			else
+				result = input1 / input2;
+		}
+		else if (value == '*')
+		{
+			result = input1 * input2;
+		}
+		else if (value == '-')
+		{
+			result = input1 - input2;
+		}
+		else if (value == '+')
+		{
+			result = input1 + input2;
+		}
+		else if (value == '%')
+		{
+			if(input2 == 0){
+				alert("It's over 9000!");
+				return 
+			}
+			else
+				result = input1 % input2;
+		}
+	}
+	else
+	{
+		alert("Error\n");
+		return
+	}
+	alert(result);
+	console.log(result);
+}
+	</script>
+</body>
+</html>

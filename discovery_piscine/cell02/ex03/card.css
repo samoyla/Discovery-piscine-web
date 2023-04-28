@@ -1,0 +1,19 @@
+p{
+	text-align: center;
+	color: rgb(25, 103, 105);
+	font-weight: bolder;
+}
+table{
+	background-color: rgb(173, 205, 174);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+h3{
+	font-style: oblique;
+}
+h4{
+	text-align: center;
+	color: rgb(53, 117, 75);
+}
+
